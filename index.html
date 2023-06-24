@@ -1,0 +1,871 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+  <!--  STYLES  -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/icons/icons.css" rel="stylesheet">
+  <link href="css/slick.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet">
+
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+  <title>Profile settings</title>
+
+</head>
+<body>
+
+<div class="menu">
+
+  <div class="menu-content">
+    <a href="index.html" class="menu__logo">
+      <img src="assets/images/logo-site.svg" alt="logo-site">
+    </a>
+    <div class="d-flex justify-content-between align-items-center d-none d-lg-block">
+      <a href="#" class="menu-item">
+        Tools
+        <i class="fa-sharp fa-solid fa-chevron-down ms-1"></i>
+      </a>
+      <a href="#" class="menu-item">About us</a>
+      <a href="#" class="menu-item">Products</a>
+      <a href="#" class="menu-item">Pricing</a>
+      <a href="#" class="menu-item">News</a>
+      <a href="#" class="menu-item">API</a>
+    </div>
+    <div>
+
+      <div class="justify-content-between align-items-center d-none d-lg-flex">
+        <a href="#" class="d-flex justify-content-start align-items-center c-black me-3">
+          <i class="fa-sharp fa-light fa-globe fs-30 me-6"></i>
+          English
+          <i class="fa-sharp fa-solid fa-chevron-down ms-6"></i>
+        </a>
+
+        <div
+          class="w-33 h-33 bgc-bodyGrey d-flex justify-content-center align-items-center rounded-circle position-relative c-black me-26">
+          <i class="fa-solid fa-bell"></i>
+          <span class="position-absolute w-10 h-10 top-6 right-8 bgc-green d-block rounded-circle"></span>
+        </div>
+        <div class="w-33 h-33 bgc-bodyGrey d-flex justify-content-center align-items-center rounded-circle position-relative c-black me-26 overflow-hidden">
+          <i class="fa-solid fa-user fs-3 mt-15"></i>
+        </div>
+
+        <div class="cursor-pointer">
+          <img src="assets/images/simple-line-icons_energy.svg" alt="simple-line-icons_energy">
+          2 000
+          <i class="fa-sharp fa-solid fa-chevron-down ms-2"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="menu-icon" class="d-block d-lg-none">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+</div>
+
+<div class="mobile-menu">
+  <a href="#" class="menu-item">
+    Tools
+    <i class="fa-sharp fa-solid fa-chevron-down"></i>
+  </a>
+  <a href="#" class="menu-item">About us</a>
+  <a href="#" class="menu-item">Products</a>
+  <a href="#" class="menu-item">Pricing</a>
+  <a href="#" class="menu-item">News</a>
+  <a href="#" class="menu-item">API</a>
+</div>
+
+
+<main>
+
+  <div class="container">
+    <div class="wrapper mb-40">
+      <ul class="nav nav-tabs mb-40" id="myTab" role="tablist">
+        <li class="nav-item me-0" role="presentation">
+          <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#history-tab-pane" type="button" role="tab" aria-controls="history-tab-pane" aria-selected="false">History</button>
+        </li>
+        <li class="nav-item d-flex ms-16" role="presentation">
+          <div class="solid-tabs"></div>
+          <button class="nav-link active" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings-tab-pane" type="button" role="tab" aria-controls="settings-tab-pane" aria-selected="true">Settings</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="connections-tab" data-bs-toggle="tab" data-bs-target="#connections-tab-pane" type="button" role="tab" aria-controls="connections-tab-pane" aria-selected="false">Connections</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="api-key-tab" data-bs-toggle="tab" data-bs-target="#api-key-tab-pane" type="button" role="tab" aria-controls="api-key-tab-pane" aria-selected="false">API Key</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="payments-tab" data-bs-toggle="tab" data-bs-target="#payments-tab-pane" type="button" role="tab" aria-controls="payments-tab-pane" aria-selected="false">Payments</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade" id="history-tab-pane" role="tabpanel" aria-labelledby="history-tab" tabindex="0">
+          History
+        </div>
+        <div class="tab-pane fade show active" id="settings-tab-pane" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+
+          <div class="row">
+            <div class="col-4">
+              <div class="def-sec w-100 h-263 d-flex justify-content-center align-items-center flex-column">
+                <div class="position-relative">
+                  <div class="w-116 h-116 bgc-bodyGrey d-flex justify-content-center align-items-center rounded-circle position-relative c-black overflow-hidden">
+                    <i class="fa-solid fa-user fs-80 mt-40"></i>
+                  </div>
+                  <label class="w-33 h-33 d-flex justify-content-center align-items-center position-absolute right-0 bottom-0 bgc-white rounded-circle def-border cursor-pointer">
+                    <input type="file" class="d-none">
+                    <img src="assets/images/material-symbols_add-a-photo-outline.svg" alt="material-symbols_add-a-photo-outline">
+                  </label>
+                </div>
+                <span class="fs-14 mt-18 fw-500">
+                  jdemail@gmail.com
+                </span>
+              </div>
+              <div class="mt-20">
+                <span class="fs-16 c-textBlackTitle mb-1 fw-bold d-block">language</span>
+                <div class="dropdown def-dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/US.svg" alt="US" class="me-20">
+                    English (USA)
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="def-sec">
+                <p class="def-sec-title">Subscription</p>
+
+                <div class="row">
+                  <div class="col-4">
+                    <div class="fs-16 c-textBlackTitle mb-1 fw-bold">Available Energy:</div>
+                    <div>
+                      <img src="assets/images/simple-line-icons_energy.svg" alt="icons_energy">
+                      <span>250</span>
+                    </div>
+                    <button type="button" class="btn btn-dark mt-2">Refill  balance</button>
+                  </div>
+
+                  <div class="col-8">
+                    <div class="fs-16 c-textBlackTitle mb-1 fw-bold">Tariff plan:</div>
+                    <div class="def-sec black">
+                      <div class="d-flex align-items-center">
+                        <div class="fs-16 c-textBlackTitle mb-1 fw-bold me-2">Professional</div>
+                        <span class="fs-13 c-grey">until 07/13/2023</span>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-7">
+                          <ul class="list-unstyled mt-11">
+                            <li class="d-flex justify-content-between align-items-center mb-2">
+                              <span class="fw-500">
+                                <i class="fa-regular fa-circle-check fs-16 me-2"></i>
+                                Energy
+                              </span>
+                              <span class="d-flex align-items-center">
+                                <img src="assets/images/simple-line-icons_energy.svg" alt="icons_energy">
+                                750
+                              </span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-centerr mb-2">
+                              <span class="fw-500">
+                                <i class="fa-regular fa-circle-check fs-16 me-2"></i>
+                                Recharging
+                              </span>
+                              <span class="d-flex align-items-center">
+                                <img src="assets/images/simple-line-icons_energy.svg" alt="icons_energy">
+                                60 / hour
+                              </span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-centerr mb-2">
+                              <span class="fw-500">
+                                <i class="fa-regular fa-circle-check fs-16 me-2"></i>
+                                Storage
+                              </span>
+                              <span class="d-flex align-items-center">
+                                <img src="assets/images/simple-line-icons_energy.svg" alt="icons_energy">
+                                200 GB
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-5">
+                          <ul class="list-unstyled mt-11">
+                            <li class="d-flex justify-content-between align-items-center mb-2">
+                              <span class="fw-500">
+                                <i class="fa-regular fa-circle-check fs-16 me-2"></i>
+                                Neuron Assistant
+                              </span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center mb-2">
+                              <span class="fw-500">
+                                <i class="fa-regular fa-circle-check fs-16 me-2"></i>
+                                Neuron Publisher
+                              </span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center mb-2">
+                              <span class="fw-500">
+                                <i class="fa-regular fa-circle-check fs-16 me-2"></i>
+                                Neuron Video
+                              </span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center mb-2">
+                              <span class="fw-500">
+                                <i class="fa-regular fa-circle-check fs-16 me-2"></i>
+                                Neuron Business
+                              </span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                              <span class="fw-500">
+                                <i class="fa-regular fa-circle-check fs-16 me-2"></i>
+                                Neuron Patent
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-border-black mt-10 w-100">Change plan</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="tab-pane fade" id="connections-tab-pane" role="tabpanel" aria-labelledby="connections-tab" tabindex="0">
+          Connections
+        </div>
+        <div class="tab-pane fade" id="api-key-tab-pane" role="tabpanel" aria-labelledby="api-key-tab" tabindex="0">
+          API Key
+        </div>
+        <div class="tab-pane fade" id="payments-tab-pane" role="tabpanel" aria-labelledby="payments-tab" tabindex="0">
+          Payments
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper mb-40">
+      <ul class="nav nav-tabs mb-40" id="myTab2" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="neuron-assistant-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#neuron-assistant-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="#neuron-assistant-tab-pane"
+                  aria-selected="true">Neuron Assistant</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="neuron-publisher-tab" data-bs-toggle="tab" data-bs-target="#neuron-publisher-tab-pane" type="button" role="tab" aria-selected="false">Neuron Publisher</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="neuron-news-tab" data-bs-toggle="tab" data-bs-target="#neuron-news-tab-pane" type="button" role="tab" aria-selected="false">Neuron News</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent2">
+        <div class="tab-pane fade show active" id="neuron-assistant-tab-pane" role="tabpanel" tabindex="0">
+
+          <div class="row">
+            <div class="col-6">
+              <span class="fs-16 c-textBlackTitle mb-1 fw-bold d-block">City</span>
+              <div class="dropdown def-dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/images/US.svg" alt="US" class="me-20">
+                  Toronto, Ohio, USA
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 mt-20">
+              <p class="fs-16 c-textBlackTitle mb-1 fw-bold">Telegram notifications</p>
+              <p class="c-black fs-13 mb-7">This option allows you to receive up-to-date information about the weather and events in your city</p>
+
+              <label class="def-checkbox-row mb-10">
+                <input type="checkbox">
+                <span class="checkbox">
+                  <i class="fa-duotone fa-check"></i>
+                </span>
+                <span class="text">Weather</span>
+              </label>
+              <label class="def-checkbox-row">
+                <input type="checkbox">
+                <span class="checkbox">
+                  <i class="fa-duotone fa-check"></i>
+                </span>
+                <span class="text">Events</span>
+              </label>
+
+              <p class="fs-16 c-textBlackTitle mb-1 fw-bold mt-20">Your interests</p>
+              <select multiple data-placeholder="Add tools">
+                <option>Sketch</option>
+                <option selected>Framer X</option>
+                <option>Photoshop</option>
+                <option>Principle</option>
+                <option>Technology</option>
+                <option>Design</option>
+                <option>Invision</option>
+              </select>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="tab-pane fade" id="neuron-publisher-tab-pane" role="tabpanel" tabindex="0">
+          <p class="fs-18 c-black fw-bold mb-17">Projects</p>
+
+          <div class="row ms-0">
+            <div class="col-6 pb-10 border-bottom ps-0">
+              <span class="fa-16 c-black fw-bold">Name</span>
+            </div>
+            <div class="col-6 pb-10 border-bottom">
+              <span class="fa-16 c-black fw-bold">Connections</span>
+            </div>
+          </div>
+          <div class="row border-bottom-25 ms-0">
+            <div class="col-6 pt-17 pb-17">
+              <span class="c-grey fs-16">xdxcvsdvsdvsdvsdvsd sdvsdvsdc</span>
+            </div>
+            <div class="col-6 pt-17 pb-17">
+             <div class="d-flex justify-content-between align-items-center">
+               <div>
+                 <div class="d-flex justify-content-start align-items-center mb-2">
+                   <img src="assets/images/insta.svg" alt="insta">
+                   <span class="c-darkGrey fs-16 ms-2">Instagram (ник инст.)</span>
+                 </div>
+                 <div class="d-flex justify-content-start align-items-center mb-2">
+                   <img src="assets/images/tele.svg" alt="tele">
+                   <span class="c-darkGrey fs-16 ms-2">Telegram (ник тг.)</span>
+                 </div>
+               </div>
+               <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
+             </div>
+            </div>
+          </div>
+          <div class="row border-bottom-25 ms-0">
+            <div class="col-6 pt-17 pb-17">
+              <span class="c-grey fs-16">Project name</span>
+            </div>
+            <div class="col-6 pt-17 pb-17">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="d-flex justify-content-start align-items-center mb-2">
+                    <img src="assets/images/insta.svg" alt="insta">
+                    <span class="c-darkGrey fs-16 ms-2">Telegram (ник инст.)</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end mt-10">
+            <button class="btn btn-border-black" data-bs-toggle="modal" data-bs-target="#add-neuron-publisher">
+              <i class="fa-solid fa-plus"></i>
+              Add project
+            </button>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="neuron-news-tab-pane" role="tabpanel" tabindex="0">
+          <p class="fs-18 c-black fw-bold mb-17">Projects</p>
+
+          <table class="w-100">
+            <tbody>
+            <tr class="border-bottom">
+              <th class="pb-10">Name</th>
+              <th class="pb-10">Connections</th>
+              <th class="pb-10">Language</th>
+              <th class="pb-10">Topics</th>
+              <th class="pb-10">News per day</th>
+            </tr>
+            <tr class="border-bottom-25">
+              <td style="max-width: 200px" class="pt-10 pb-10">
+                <span class="c-darkGrey">
+                  xdxcvsdvsdvsdvsdvsd sdvsdvsdc
+                </span>
+              </td>
+              <td class="pt-10 pb-10">
+                <div class="d-flex justify-content-start align-items-center mb-2">
+                  <img src="assets/images/insta.svg" alt="insta">
+                  <span class="c-darkGrey fs-16 ms-2">Instagram (ник инст.)</span>
+                </div>
+              </td>
+              <td class="pt-10 pb-10">
+                <span class="c-darkGrey">
+                  English
+                </span>
+              </td>
+              <td class="pt-10 pb-10">
+                <div class="c-darkGrey mb-6">
+                  Technology
+                </div>
+                <div class="c-darkGrey">
+                  Technology
+                </div>
+              </td>
+              <td class="pt-10 pb-10">
+                <div class="d-flex justify-content-between">
+                  <span class="c-darkGrey">
+                    2
+                  </span>
+                  <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-bottom-25">
+              <td style="max-width: 200px" class="pt-10 pb-10">
+                <span class="c-darkGrey">
+                  Project name
+                </span>
+              </td>
+              <td class="pt-10 pb-10">
+                <div class="d-flex justify-content-start align-items-center mb-2">
+                  <img src="assets/images/tele.svg" alt="tele">
+                  <span class="c-darkGrey fs-16 ms-2">Telegram (ник тг.)</span>
+                </div>
+              </td>
+              <td class="pt-10 pb-10">
+                <span class="c-darkGrey">
+                  Russian
+                </span>
+              </td>
+              <td class="pt-10 pb-10">
+                <div class="c-darkGrey mb-6">
+                  Technology
+                </div>
+              </td>
+              <td class="pt-10 pb-10">
+                <div class="d-flex justify-content-between">
+                  <span class="c-darkGrey">
+                    2
+                  </span>
+                  <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
+                </div>
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+
+          <div class="d-flex justify-content-end mt-10">
+            <button class="btn btn-border-black" data-bs-toggle="modal" data-bs-target="#add-neuron-news">
+              <i class="fa-solid fa-plus"></i>
+              Add project
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper mb-40">
+      <ul class="nav nav-tabs mb-40" id="myTab3" role="tablist">
+        <li class="nav-item me-0" role="presentation">
+          <button class="nav-link" id="energy-history-tab" data-bs-toggle="tab" data-bs-target="#energy-history-tab-pane" type="button" role="tab" aria-controls="history-tab-pane" aria-selected="false">History</button>
+        </li>
+        <li class="nav-item d-flex ms-16" role="presentation">
+          <div class="solid-tabs"></div>
+          <button class="nav-link" id="energy-settings-tab" data-bs-toggle="tab" data-bs-target="#energy-settings-tab-pane" type="button" role="tab" aria-controls="settings-tab-pane" aria-selected="true">Settings</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="energy-connections-tab" data-bs-toggle="tab" data-bs-target="#energy-connections-tab-pane" type="button" role="tab" aria-controls="connections-tab-pane" aria-selected="false">Connections</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="energy-api-key-tab" data-bs-toggle="tab" data-bs-target="#energy-api-key-tab-pane" type="button" role="tab" aria-controls="api-key-tab-pane" aria-selected="false">API Key</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="energy-payments-tab" data-bs-toggle="tab" data-bs-target="#energy-payments-tab-pane" type="button" role="tab" aria-controls="payments-tab-pane" aria-selected="false">Payments</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="energy-Usages-tab" data-bs-toggle="tab" data-bs-target="#energy-Usages-tab-pane" type="button" role="tab" aria-controls="payments-tab-pane" aria-selected="false">Usages</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent3">
+        <div class="tab-pane fade" id="energy-history-tab-pane" role="tabpanel" aria-labelledby="history-tab" tabindex="0">
+          History
+        </div>
+        <div class="tab-pane fade" id="energy-settings-tab-pane" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+          Usages
+        </div>
+        <div class="tab-pane fade" id="energy-connections-tab-pane" role="tabpanel" aria-labelledby="connections-tab" tabindex="0">
+          Connections
+        </div>
+        <div class="tab-pane fade" id="energy-api-key-tab-pane" role="tabpanel" aria-labelledby="api-key-tab" tabindex="0">
+          API Key
+        </div>
+        <div class="tab-pane fade" id="energy-payments-tab-pane" role="tabpanel" aria-labelledby="payments-tab" tabindex="0">
+          Payments
+        </div>
+        <div class="tab-pane fade show active" id="energy-Usages-tab-pane" role="tabpanel" aria-labelledby="payments-tab" tabindex="0">
+          <p class="fs-16 c-textBlackTitle mb-1 fw-bold d-block">
+            Energy
+            <img src="assets/images/simple-line-icons_energy.svg" alt="icons_energy">
+          </p>
+          <div class="def-sec">
+            <div class="d-flex justify-content-end">
+              <div class="dropdown def-dropdown">
+                <button class="btn btn-secondary dropdown-toggle pe-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  This Month
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </div>
+            <canvas id="myChart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<div class="modal fade" id="edit-neuron-publisher" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h1 class="modal-title fs-20 fw-bold" id="exampleModalLabel">Edit</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fs-16 c-black fw-bold mb-1">Name</p>
+
+        <label class="def-input">
+          <input type="text" placeholder="Construction">
+        </label>
+
+        <div class="d-flex justify-content-between pb-9 mt-20 border-bottom mb-12">
+          <span class="fw-bold c-black">Connections</span>
+          <span class="c-black cursor-pointer">
+            <i class="fa-solid fa-plus"></i>
+            Add connection
+          </span>
+        </div>
+        
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/insta.svg" alt="insta" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/insta.svg" alt="insta" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+          <button class="btn btn-dark me-4" data-bs-dismiss="modal">Save</button>
+          <button class="btn c-red text-nowrap" data-bs-dismiss="modal">
+            <i class="fa-solid fa-trash-can me-2"></i>
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="modal fade" id="add-neuron-publisher" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h1 class="modal-title fs-20 fw-bold" id="add-exampleModalLabel">Project</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fs-16 c-black fw-bold mb-1">Name</p>
+
+        <label class="def-input">
+          <input type="text" placeholder="Construction">
+        </label>
+
+        <div class="d-flex justify-content-between pb-9 mt-20 border-bottom mb-12">
+          <span class="fw-bold c-black">Connections</span>
+          <span class="c-black cursor-pointer">
+            <i class="fa-solid fa-plus"></i>
+            Add connection
+          </span>
+        </div>
+
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/insta.svg" alt="insta" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/insta.svg" alt="insta" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-between align-items-center mt-2">
+          <button class="btn btn-dark" data-bs-dismiss="modal">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="add-neuron-news" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h1 class="modal-title fs-20 fw-bold">Project</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="fs-16 c-black fw-bold mb-1">Name</p>
+
+        <label class="def-input">
+          <input type="text" placeholder="Construction">
+        </label>
+
+        <p class="fs-16 c-black fw-bold mb-1 mt-20">Topics</p>
+        <select multiple data-placeholder="Add tools">
+          <option>Sketch</option>
+          <option selected>Framer X</option>
+          <option>Photoshop</option>
+          <option>Principle</option>
+          <option>Technology</option>
+          <option>Design</option>
+          <option>Invision</option>
+        </select>
+
+        <p class="fs-16 c-black fw-bold mb-1 mt-20">language</p>
+        <div class="dropdown def-dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="assets/images/US.svg" alt="US" class="me-20">
+            English (USA)
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-between pb-9 mt-20 border-bottom mb-12">
+          <span class="fw-bold c-black">Connections</span>
+          <span class="c-black cursor-pointer">
+            <i class="fa-solid fa-plus"></i>
+            Add connection
+          </span>
+        </div>
+
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/insta.svg" alt="insta" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/insta.svg" alt="insta" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+        <div class="d-flex justify-content-start mb-11">
+          <label class="def-checkbox me-21">
+            <input type="checkbox">
+            <span>
+              <i class="fa-duotone fa-check"></i>
+            </span>
+          </label>
+          <img src="assets/images/tele.svg" alt="tele" class="me-6">
+          <span class="c-darkGrey">Instagram (@)</span>
+        </div>
+
+        <div class="mt-30 fw-bold mb-20">
+          News per day
+          <label class="def-input ms-2 w-70 !h-32">
+            <input type="text" value="2" class="ps-0 text-center !h-32 !br-8 fw-bold">
+          </label>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-2">
+          <button class="btn btn-dark" data-bs-dismiss="modal">Create</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/fastfront.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
