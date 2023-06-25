@@ -83,15 +83,15 @@ body {
   border-bottom: 0;
 }
 .nav-tabs .nav-item {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 .nav-tabs .nav-item .nav-link {
-  padding: 6px 12px;
-  border-radius: 16px;
+  padding: 0.375rem 0.75rem;
+  border-radius: 1rem;
   border: 1px solid #C0C0C0;
   background: #FFF;
   color: #686F7B;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 .nav-tabs .nav-item .nav-link.active {
@@ -121,7 +121,7 @@ body {
 }
 .menu-item {
   color: #1B193F;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 155%;
   letter-spacing: -0.54px;
   margin-right: 1.625rem;
@@ -213,15 +213,23 @@ body {
   transition: 0.3s;
   opacity: 0;
   transform: translateX(-100%);
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
+  backdrop-filter: blur(20px);
 }
 .mobile-menu.active {
   opacity: 1;
   transform: translateX(0);
 }
+.mobile-menu .menu-item {
+  display: block;
+  text-align: center;
+  margin: 0.7rem 0;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.2rem;
+}
 
 main {
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #F6FAFF;
   width: 100%;
   max-width: 1456px;
@@ -245,7 +253,7 @@ main {
   font-size: 16px;
   font-weight: 700;
   position: absolute;
-  top: -25px;
+  top: -1.5625rem;
   left: 0;
 }
 .def-sec.black {
@@ -257,11 +265,11 @@ main {
 }
 
 .solid-tabs {
-  width: 3px;
-  height: 34px;
+  width: 0.1875rem;
+  height: 2.125rem;
   background: #D9D9D9;
-  margin-right: 16px;
-  border-radius: 5px;
+  margin-right: 1rem;
+  border-radius: 0.3125rem;
 }
 
 .def-dropdown .dropdown-toggle {
@@ -323,7 +331,7 @@ main {
 .btn-border-black {
   border-radius: 1rem;
   border: 1px solid #1B193F;
-  padding: 13.529px 29.517px;
+  padding: 0.8455625rem 1.8448125rem;
   color: #1B193F;
   font-size: 1rem;
 }
@@ -388,7 +396,7 @@ main {
 .def-checkbox-row .text {
   transition: 0.3s color;
   color: #686F7B;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .def-checkbox-row input:checked ~ .checkbox {
@@ -408,7 +416,7 @@ main {
 .selectMultiple {
   width: 100%;
   position: relative;
-  border-radius: 16px;
+  border-radius: 1rem;
   border: 1px solid #C0C0C0;
   background: #FFF;
   cursor: pointer;
@@ -419,10 +427,10 @@ main {
 .selectMultiple > div {
   position: relative;
   z-index: 2;
-  padding: 10px 16px;
+  padding: 0.625rem 1rem;
   border-radius: 8px;
-  font-size: 14px;
-  min-height: 44px;
+  font-size: 0.875rem;
+  min-height: 2.75rem;
   transition: box-shadow 0.3s ease;
 }
 .selectMultiple > div:hover {
@@ -433,7 +441,7 @@ main {
   top: 0;
   bottom: 0;
   cursor: pointer;
-  width: 28px;
+  width: 1.75rem;
   position: absolute;
 }
 .selectMultiple > div .arrow:before, .selectMultiple > div .arrow:after {
@@ -441,7 +449,7 @@ main {
   position: absolute;
   display: block;
   width: 2px;
-  height: 8px;
+  height: 0.5rem;
   border-bottom: 8px solid #99A3BA;
   top: 43%;
   transition: all 0.3s ease;
@@ -458,10 +466,10 @@ main {
   color: #99A3BA;
   display: block;
   position: absolute;
-  left: 12px;
+  left: 0.75rem;
   cursor: pointer;
   top: 8px;
-  line-height: 28px;
+  line-height: 1.75rem;
   transition: all 0.3s ease;
 }
 .selectMultiple > div span.hide {
@@ -471,7 +479,7 @@ main {
 }
 .selectMultiple > div a {
   position: relative;
-  padding: 0 24px 0px 8px;
+  padding: 0 1.5rem 0rem 0.5rem;
   line-height: 28px;
   display: inline-block;
   vertical-align: top;
@@ -481,7 +489,7 @@ main {
   background: #F6FAFF;
   overflow: hidden;
   color: #1B193F;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 .selectMultiple > div a em {
@@ -493,7 +501,7 @@ main {
   content: "";
   left: 0;
   top: 0;
-  bottom: 6px;
+  bottom: 0.375rem;
   width: 100%;
   position: absolute;
   display: block;
@@ -506,15 +514,15 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 24px;
-  height: 28px;
+  width: 1.5rem;
+  height: 1.75rem;
   display: block;
 }
 .selectMultiple > div a i:before, .selectMultiple > div a i:after {
   content: "";
   display: block;
-  width: 2px;
-  height: 10px;
+  width: 0.125rem;
+  height: 0.625rem;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -532,7 +540,7 @@ main {
   transition: opacity 0.3s ease;
 }
 .selectMultiple > div a.notShown:before {
-  width: 28px;
+  width: 1.75rem;
   transition: width 0.45s cubic-bezier(0.87, -0.41, 0.19, 1.44) 0.2s;
 }
 .selectMultiple > div a.notShown i {
@@ -546,7 +554,7 @@ main {
 }
 .selectMultiple > div a.notShown.shown {
   opacity: 1;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 .selectMultiple > div a.notShown.shown:before {
   width: 100%;
@@ -559,7 +567,7 @@ main {
   transform: translate(0, 0);
 }
 .selectMultiple > div a.remove:before {
-  width: 28px;
+  width: 1.75rem;
   transition: width 0.4s cubic-bezier(0.87, -0.41, 0.19, 1.44) 0s;
 }
 .selectMultiple > div a.remove i {
@@ -579,7 +587,7 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 16px;
+  font-size: 1rem;
   z-index: 1;
   position: absolute;
   top: 100%;
@@ -587,7 +595,7 @@ main {
   right: 0;
   visibility: hidden;
   opacity: 0;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transform: translate(0, 20px) scale(0.8);
   transform-origin: 0 0;
   filter: drop-shadow(0 12px 20px rgba(22, 42, 90, 0.08));
@@ -596,7 +604,7 @@ main {
 .selectMultiple > ul li {
   color: #1E2330;
   background: #fff;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -623,8 +631,8 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 6px;
-  height: 6px;
+  width: 0.375rem;
+  height: 0.375rem;
   background: rgba(0, 0, 0, 0.4);
   opacity: 0;
   border-radius: 100%;
@@ -705,8 +713,8 @@ html {
 .dribbble {
   position: fixed;
   display: block;
-  right: 20px;
-  bottom: 20px;
+  right: 1.25rem;
+  bottom: 1.25rem;
   opacity: 0.5;
   transition: all 0.4s ease;
 }
@@ -715,7 +723,7 @@ html {
 }
 .dribbble img {
   display: block;
-  height: 36px;
+  height: 2.25rem;
 }
 
 .def-input {
@@ -723,18 +731,98 @@ html {
 }
 .def-input input {
   width: 100%;
-  height: 50px;
+  height: 3.125rem;
   border-radius: 1rem;
   padding-left: 1rem;
   border: 1px solid #C0C0C0;
   background: #FFF;
   color: #1B193F;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 .modal {
   backdrop-filter: blur(5px);
+}
+
+.footer {
+  background: #2E312F;
+  padding-top: 4.125rem;
+  padding-bottom: 2.0625rem;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.footer .inner {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .footer .inner {
+    flex-wrap: wrap;
+  }
+}
+.footer .inner .box1 {
+  margin-right: 1.625rem;
+}
+.footer .inner .box1 :last-child {
+  margin-right: 0;
+}
+.footer .inner .box-no {
+  margin-top: 2.1875rem;
+}
+.footer .inner .box2 {
+  margin-left: 3.0625rem;
+}
+.footer .inner .box2 :last-child {
+  margin-left: 0;
+}
+@media (max-width: 1200px) {
+  .footer .inner .box2 {
+    margin-left: 0;
+    margin-right: 1.875rem;
+    margin-top: 2.5rem;
+  }
+}
+.footer .inner .box h3 {
+  color: var(--white, #FFF);
+  font-size: 1.125rem;
+  line-height: 150%;
+  margin-bottom: 15px;
+}
+.footer .inner .box a {
+  display: block;
+  margin: 0.375rem 0;
+}
+.footer .inner .box .footer-link {
+  color: var(--stroke, #C0C0C0);
+  font-size: 0.875rem;
+  line-height: 155%;
+  letter-spacing: -0.42px;
+}
+.footer .inner .box .footer-link-gray {
+  color: var(--gray, #686F7B);
+  font-size: 0.875rem;
+  line-height: 155%;
+  letter-spacing: -0.42px;
+}
+.footer .icons-footer {
+  margin-top: 2.8125rem;
+  padding-top: 1.3125rem;
+  border-top: 2px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .icons-footer .icons i {
+  margin-right: 1.25rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.footer .icons-footer .text-footer a {
+  color: var(--white, #FFF);
+  font-size: 0.875rem;
+  line-height: 150%;
+  opacity: 0.6999999881;
 }
 
 /*# sourceMappingURL=style.css.map */

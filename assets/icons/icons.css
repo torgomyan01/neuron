@@ -43,6 +43,19 @@
 .fa-trash-can:before{
     content: "\f2ed"
 }
+
+.fa-facebook-f:before{
+    content: "\f39e"
+}
+
+.fa-linkedin-in:before{
+    content: "\f0e1"
+}
+
+.fa-twitter:before{
+    content: "\f099"
+}
+
 /*---------------------------------*/
 
 
