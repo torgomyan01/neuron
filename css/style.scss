@@ -781,6 +781,26 @@ html {
           margin-left: 10px;
         }
       }
+      .user{
+        .user-email{
+          .email{
+            color: var(--gray, #686F7B);
+            font-size: 16px;
+            letter-spacing: 0.16px;
+          }
+        }
+        table{
+          max-width: 802px;
+          .c-darkGreys{
+            color: var(--gray, #686F7B);
+            font-size: 16px;
+            font-weight: 700;
+          }
+          .green{
+            color: #00DE31;
+          }
+        }
+      }
 
       .title-buttom{
         margin-top: 50px;
@@ -831,33 +851,20 @@ html {
 
     }
 
-
-    .table{
-      max-width: 763px;
-      .td{
-        border-bottom: 1px solid #C0C0C0;;
-        display: flex;
-        padding-bottom: 10px;
-        h3{
-          color: var(--black, #1B193F);
-          font-size: 16px;
-          font-weight: 700;
-          margin-right: 130px;
-        }
+    table{
+      max-width: 762px;
+      .c-darkGreys{
+        color: var(--gray, #686F7B);
+        font-size: 16px;
+        font-weight: 700;
       }
-      .tr{
-        display: flex;
-        padding-top: 10px;
-        span{
-          color: var(--gray, #686F7B);
-          font-size: 16px;
-          font-weight: 700;
-          margin-right: 130px;
-
-        }
+      i{
+       color: #686F7B;
+        cursor: pointer;
       }
-
     }
+
+
   }
 
 }

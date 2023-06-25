@@ -277,9 +277,47 @@
                 <img src="./assets/images/LinkedIn.svg" alt="Linkedin">
                 <h3 class="mt-6">LinkedIn</h3>
               </div>
+              <div class="user mt-21 me-9 d-flex align-items-center" style="width: 100%">
+                <div class="user-email ms-45 me-50">
+                  <img src="./assets/images/User%20Image.png" alt="user">
+                  <a href="#" class="ms-16 email">jdemail@gmail.com</a>
+                </div>
+                <table class="w-100">
+                  <tbody>
+                  <tr class="border-bottom">
+                    <th class="pb-10">Type</th>
+                    <th class="pb-10" style="position: relative; left: 167px">Token Status</th>
+                    <th class="pb-10 d-flex justify-content-end">Action</th>
+                  </tr>
+                  <tr class="border-bottom-25">
+                    <td style="max-width: 200px" class="pt-10 pb-10">
+                <span class="c-darkGreys">
+                  Profile
+                </span>
+                    </td>
+                    <td class="pt-10 pb-10">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <span class="c-darkGreys green ">Valid <img width="15px" height="15px" src="./assets/images/reconnect.svg" alt="rec"></span>
+                      </div>
+                    </td>
+                    <td class="pt-10 pb-10">
+                      <div class="d-flex justify-content-end">
+                        <div>
+                          <img src="./assets/images/reconnect.svg" style="cursor: pointer; width: 20px; height: 20px " alt="rec">
+                          <i class="fa-solid fa-trash-can ms-10" style="color: #686F7B; cursor: pointer"></i>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="border-bottom-25">
+                  </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
               <div class="title-buttom">
-                <p class="title">You have not connected  any account yet, click on the button to get started.</p>
-                <button class="btn btn-dark btn-Conections">Connect LinkedIn profile/page</button>
+                <button class="btn btn-dark btn-Conections"><img src="./assets/images/ic_round-plus.svg" alt="ic"> Add another LinkedIn profile/page</button>
               </div>
             </div>
             <div class="gray"  style="height: 4px; background: #F1F1F1;
@@ -323,22 +361,51 @@
               <p>Your secret API keys are listed below. Please note that we no longer display your private API keys once they have been generated.</p>
               <p>Do not share your API key with others or expose it to a browser or other client code.</p>
             </div>
-            <div class="table">
-              <div class="td">
-                <h3>Name</h3>
-                <h3>Key</h3>
-                <h3>Created</h3>
-                <h3>Last used</h3>
-              </div>
-              <div class="tr">
-                <span>Name</span>
-                <span>sk-...wosG</span>
-                <span>22 мая 2023 г.</span>
-                <span>9 июн. 2023</span>
-                <i class="fa-solid fa-trash-can"></i>
-                <i class="fa-solid fa-pen"></i>
-              </div>
-            </div>
+                <table class="w-100">
+                  <tbody>
+                  <tr class="border-bottom">
+                    <th class="pb-10">Name</th>
+                    <th class="pb-10">Connections</th>
+                    <th class="pb-10">Created</th>
+                    <th class="pb-10">Last used</th>
+                  </tr>
+                  <tr class="border-bottom-25">
+                    <td style="max-width: 200px" class="pt-10 pb-10">
+                <span class="c-darkGreys">
+                  Name
+                </span>
+                    </td>
+                    <td class="pt-10 pb-10">
+                      <div class="d-flex justify-content-start align-items-center">
+                        <span class="c-darkGreys ">sk-...wosG</span>
+                      </div>
+                    </td>
+                    <td class="pt-10 pb-10">
+                <span class="c-darkGreys">
+                  22 мая 2023 г.
+                </span>
+                    </td>
+                    <td class="pt-10 pb-10">
+                      <div class="c-darkGreys mb-6">
+                        9 июн. 2023
+                      </div>
+                    </td>
+                    <td class="pt-10 pb-10">
+                      <div class="d-flex justify-content-end">
+                        <div>
+                        <i class="fa-solid fa-trash-can ms-15 me-10"></i>
+                        <i class="fa-solid fa-pen"></i>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="border-bottom-25">
+                  </tr>
+
+                  </tbody>
+                </table>
+                  <button class="btn btn-dark mt-7" style="width: auto;"><img src="./assets/images/ic_round-plus.svg" alt="res"> Create new secret key</button>
+
           </div>
         </div>
         <div class="tab-pane fade" id="payments-tab-pane" role="tabpanel" aria-labelledby="payments-tab" tabindex="0">

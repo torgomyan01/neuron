@@ -763,6 +763,22 @@ html {
   font-weight: 600;
   margin-left: 10px;
 }
+#connections-tab-pane .inner .wrapper-conecions .user .user-email .email {
+  color: var(--gray, #686F7B);
+  font-size: 16px;
+  letter-spacing: 0.16px;
+}
+#connections-tab-pane .inner .wrapper-conecions .user table {
+  max-width: 802px;
+}
+#connections-tab-pane .inner .wrapper-conecions .user table .c-darkGreys {
+  color: var(--gray, #686F7B);
+  font-size: 16px;
+  font-weight: 700;
+}
+#connections-tab-pane .inner .wrapper-conecions .user table .green {
+  color: #00DE31;
+}
 #connections-tab-pane .inner .wrapper-conecions .title-buttom {
   margin-top: 50px;
   padding-bottom: 50px;
@@ -801,29 +817,17 @@ html {
   color: var(--black, #1B193F);
   font-size: 16px;
 }
-#api-key-tab-pane .inner .table {
-  max-width: 763px;
+#api-key-tab-pane .inner table {
+  max-width: 762px;
 }
-#api-key-tab-pane .inner .table .td {
-  border-bottom: 1px solid #C0C0C0;
-  display: flex;
-  padding-bottom: 10px;
-}
-#api-key-tab-pane .inner .table .td h3 {
-  color: var(--black, #1B193F);
-  font-size: 16px;
-  font-weight: 700;
-  margin-right: 130px;
-}
-#api-key-tab-pane .inner .table .tr {
-  display: flex;
-  padding-top: 10px;
-}
-#api-key-tab-pane .inner .table .tr span {
+#api-key-tab-pane .inner table .c-darkGreys {
   color: var(--gray, #686F7B);
   font-size: 16px;
   font-weight: 700;
-  margin-right: 130px;
+}
+#api-key-tab-pane .inner table i {
+  color: #686F7B;
+  cursor: pointer;
 }
 
 .footer {
