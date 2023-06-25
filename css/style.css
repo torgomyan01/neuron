@@ -206,6 +206,7 @@ body {
 
 .mobile-menu {
   position: fixed;
+  z-index: 1000;
   top: 9rem;
   left: 0;
   width: 100%;
@@ -743,6 +744,86 @@ html {
 
 .modal {
   backdrop-filter: blur(5px);
+}
+
+#connections-tab-pane .inner .wrapper-conecions {
+  padding: 0;
+  margin-bottom: 16px;
+}
+#connections-tab-pane .inner .wrapper-conecions .heading {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background: var(--bg, #F6FAFF);
+}
+#connections-tab-pane .inner .wrapper-conecions .heading h3 {
+  color: var(--txt-black, #222);
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+#connections-tab-pane .inner .wrapper-conecions .title-buttom {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+@media (max-width: 800px) {
+  #connections-tab-pane .inner .wrapper-conecions .title-buttom {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+#connections-tab-pane .inner .wrapper-conecions .title-buttom .title {
+  margin-right: 190px;
+  color: var(--gray, #686F7B);
+  font-size: 16px;
+  letter-spacing: -0.48px;
+}
+@media (max-width: 800px) {
+  #connections-tab-pane .inner .wrapper-conecions .title-buttom .title {
+    margin-right: 0;
+  }
+}
+#connections-tab-pane .inner .wrapper-conecions .title-buttom .btn-Conections {
+  width: auto;
+  margin-right: 10px;
+}
+
+#api-key-tab-pane .inner .heading h3 {
+  color: var(--txt-black, #222);
+  font-size: 18px;
+  font-weight: 700;
+}
+#api-key-tab-pane .inner .heading p {
+  color: var(--black, #1B193F);
+  font-size: 16px;
+}
+#api-key-tab-pane .inner .table {
+  max-width: 763px;
+}
+#api-key-tab-pane .inner .table .td {
+  border-bottom: 1px solid #C0C0C0;
+  display: flex;
+  padding-bottom: 10px;
+}
+#api-key-tab-pane .inner .table .td h3 {
+  color: var(--black, #1B193F);
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 130px;
+}
+#api-key-tab-pane .inner .table .tr {
+  display: flex;
+  padding-top: 10px;
+}
+#api-key-tab-pane .inner .table .tr span {
+  color: var(--gray, #686F7B);
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 130px;
 }
 
 .footer {

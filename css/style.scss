@@ -208,6 +208,7 @@ $menuHeight: 9rem;
 
 .mobile-menu{
   position: fixed;
+  z-index: 1000;
   top: $menuHeight;
   left: 0;
   width: 100%;
@@ -759,6 +760,107 @@ html {
   backdrop-filter: blur(5px);
 }
 
+
+#connections-tab-pane{
+
+  .inner{
+
+    .wrapper-conecions{
+      padding: 0;
+      margin-bottom: 16px;
+      .heading{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        background: var(--bg, #F6FAFF);
+        h3{
+          color: var(--txt-black, #222);
+          font-size: 16px;
+          font-weight: 600;
+          margin-left: 10px;
+        }
+      }
+
+      .title-buttom{
+        margin-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        @media (max-width: 800px) {
+          justify-content: center;
+          flex-direction: column;
+        }
+        .title{
+          margin-right: 190px;
+          color: var(--gray, #686F7B);
+          font-size: 16px;
+          letter-spacing: -0.48px;
+          @media (max-width: 800px) {
+            margin-right: 0;
+          }
+        }
+        .btn-Conections{
+          width: auto;
+          margin-right: 10px;
+        }
+      }
+    }
+
+  }
+
+}
+
+#api-key-tab-pane{
+
+  .inner{
+
+    .heading{
+
+      h3{
+        color: var(--txt-black, #222);
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      p{
+        color: var(--black, #1B193F);
+        font-size: 16px;
+      }
+
+    }
+
+
+    .table{
+      max-width: 763px;
+      .td{
+        border-bottom: 1px solid #C0C0C0;;
+        display: flex;
+        padding-bottom: 10px;
+        h3{
+          color: var(--black, #1B193F);
+          font-size: 16px;
+          font-weight: 700;
+          margin-right: 130px;
+        }
+      }
+      .tr{
+        display: flex;
+        padding-top: 10px;
+        span{
+          color: var(--gray, #686F7B);
+          font-size: 16px;
+          font-weight: 700;
+          margin-right: 130px;
+
+        }
+      }
+
+    }
+  }
+
+}
 
 // footer
 
