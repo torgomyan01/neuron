@@ -869,6 +869,29 @@ html {
 
 }
 
+#payments-tab-pane{
+
+  .heading{
+    color: var(--txt-black, #222);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  th{
+    color: var(--black, #1B193F);
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  td{
+    color: var(--gray, #686F7B);
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+
+}
+
 // footer
 
 
