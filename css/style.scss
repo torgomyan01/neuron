@@ -918,6 +918,13 @@ html {
       :last-child{
         margin-right: 0;
       }
+      @media (max-width: 780px) {
+        margin: 0;
+        width: 50%;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+      }
     }
     .box-no{
       margin-top: 2.1875rem;
@@ -931,6 +938,14 @@ html {
        margin-left: 0;
         margin-right: 1.875rem;
         margin-top: 2.5rem;
+      }
+      @media (max-width: 780px) {
+          margin: 0;
+        margin-top: 20px;
+        width: 50%;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
       }
     }
     .box{

@@ -873,6 +873,17 @@ html {
 .footer .inner .box1 :last-child {
   margin-right: 0;
 }
+@media (max-width: 780px) {
+  .footer .inner .box1 {
+    margin: 0;
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .footer .inner .box1 {
+    width: 100%;
+  }
+}
 .footer .inner .box-no {
   margin-top: 2.1875rem;
 }
@@ -887,6 +898,18 @@ html {
     margin-left: 0;
     margin-right: 1.875rem;
     margin-top: 2.5rem;
+  }
+}
+@media (max-width: 780px) {
+  .footer .inner .box2 {
+    margin: 0;
+    margin-top: 20px;
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .footer .inner .box2 {
+    width: 100%;
   }
 }
 .footer .inner .box h3 {
