@@ -87,6 +87,7 @@ body {
   border-bottom: 0;
   .nav-item{
     margin-right: 0.625rem;
+    margin-bottom: 10px;
     .nav-link{
       padding: 0.375rem 0.75rem;
       border-radius: 1rem;
@@ -218,6 +219,7 @@ $menuHeight: 9rem;
   transform: translateX(-100%);
   padding-bottom: 1.875rem;
   backdrop-filter: blur(20px);
+  background: #fff9;
   &.active{
     opacity: 1;
     transform: translateX(0);
@@ -226,8 +228,11 @@ $menuHeight: 9rem;
     display: block;
     text-align: center;
     margin: .7rem 0;
-    border-bottom: 1px solid #333;
-    padding-bottom: .2rem;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.19);
+    padding-bottom: 1rem;
+    &:last-child{
+      border-bottom: 0;
+    }
   }
 }
 
@@ -250,10 +255,10 @@ main{
   position: relative;
   &-title{
     color: #222;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     position: absolute;
-    top: -1.5625rem;
+    top: -25px;
     left: 0;
   }
   &.black{
@@ -519,7 +524,7 @@ $primary: #1D4ED8;
         top: 0;
         right: 0;
         width: 1.5rem;
-        height: 1.75rem;
+        height: 100%;
         display: block;
         &:before,
         &:after {
