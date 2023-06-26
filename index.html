@@ -127,7 +127,7 @@
         <div class="tab-pane fade show active" id="settings-tab-pane" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
 
           <div class="row">
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
               <div class="def-sec w-100 h-263 d-flex justify-content-center align-items-center flex-column">
                 <div class="position-relative">
                   <div class="w-116 h-116 bgc-bodyGrey d-flex justify-content-center align-items-center rounded-circle position-relative c-black overflow-hidden">
@@ -157,12 +157,12 @@
                 </div>
               </div>
             </div>
-            <div class="col-8">
+            <div class="col-12 col-lg-8 mt-5 mt-lg-0">
               <div class="def-sec">
                 <p class="def-sec-title">Subscription</p>
 
                 <div class="row">
-                  <div class="col-4">
+                  <div class="col-12 col-md-4">
                     <div class="fs-16 c-textBlackTitle mb-1 fw-bold">Available Energy:</div>
                     <div>
                       <img src="assets/images/simple-line-icons_energy.svg" alt="icons_energy">
@@ -171,7 +171,7 @@
                     <button type="button" class="btn btn-dark mt-2">Refill  balance</button>
                   </div>
 
-                  <div class="col-8">
+                  <div class="col-12 col-md-8 mt-3 mt-md-0">
                     <div class="fs-16 c-textBlackTitle mb-1 fw-bold">Tariff plan:</div>
                     <div class="def-sec black">
                       <div class="d-flex align-items-center">
@@ -180,7 +180,7 @@
                       </div>
 
                       <div class="row">
-                        <div class="col-7">
+                        <div class="col-12 col-sm-7">
                           <ul class="list-unstyled mt-11">
                             <li class="d-flex justify-content-between align-items-center mb-2">
                               <span class="fw-500">
@@ -214,7 +214,7 @@
                             </li>
                           </ul>
                         </div>
-                        <div class="col-5">
+                        <div class="col-12 col-sm-5">
                           <ul class="list-unstyled mt-11">
                             <li class="d-flex justify-content-between align-items-center mb-2">
                               <span class="fw-500">
@@ -436,7 +436,7 @@
         <div class="tab-pane fade show active" id="neuron-assistant-tab-pane" role="tabpanel" tabindex="0">
 
           <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-sm-6">
               <span class="fs-16 c-textBlackTitle mb-1 fw-bold d-block">City</span>
               <div class="dropdown def-dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -487,47 +487,51 @@
         <div class="tab-pane fade" id="neuron-publisher-tab-pane" role="tabpanel" tabindex="0">
           <p class="fs-18 c-black fw-bold mb-17">Projects</p>
 
-          <div class="row ms-0">
-            <div class="col-6 pb-10 border-bottom ps-0">
-              <span class="fa-16 c-black fw-bold">Name</span>
-            </div>
-            <div class="col-6 pb-10 border-bottom">
-              <span class="fa-16 c-black fw-bold">Connections</span>
-            </div>
-          </div>
-          <div class="row border-bottom-25 ms-0">
-            <div class="col-6 pt-17 pb-17">
-              <span class="c-grey fs-16">xdxcvsdvsdvsdvsdvsd sdvsdvsdc</span>
-            </div>
-            <div class="col-6 pt-17 pb-17">
-             <div class="d-flex justify-content-between align-items-center">
-               <div>
-                 <div class="d-flex justify-content-start align-items-center mb-2">
-                   <img src="assets/images/insta.svg" alt="insta">
-                   <span class="c-darkGrey fs-16 ms-2">Instagram (ник инст.)</span>
-                 </div>
-                 <div class="d-flex justify-content-start align-items-center mb-2">
-                   <img src="assets/images/tele.svg" alt="tele">
-                   <span class="c-darkGrey fs-16 ms-2">Telegram (ник тг.)</span>
-                 </div>
-               </div>
-               <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
-             </div>
-            </div>
-          </div>
-          <div class="row border-bottom-25 ms-0">
-            <div class="col-6 pt-17 pb-17">
-              <span class="c-grey fs-16">Project name</span>
-            </div>
-            <div class="col-6 pt-17 pb-17">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <div class="d-flex justify-content-start align-items-center mb-2">
-                    <img src="assets/images/insta.svg" alt="insta">
-                    <span class="c-darkGrey fs-16 ms-2">Telegram (ник инст.)</span>
+          <div class="overflow-x-auto">
+            <div class="minw-500">
+              <div class="row ms-0">
+                <div class="col-6 pb-10 border-bottom ps-0">
+                  <span class="fa-16 c-black fw-bold">Name</span>
+                </div>
+                <div class="col-6 pb-10 border-bottom">
+                  <span class="fa-16 c-black fw-bold">Connections</span>
+                </div>
+              </div>
+              <div class="row border-bottom-25 ms-0">
+                <div class="col-6 pt-17 pb-17">
+                  <span class="c-grey fs-16">xdxcvsdvsdvsdvsdvsd sdvsdvsdc</span>
+                </div>
+                <div class="col-6 pt-17 pb-17">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="d-flex justify-content-start align-items-center mb-2">
+                        <img src="assets/images/insta.svg" alt="insta">
+                        <span class="c-darkGrey fs-16 ms-2">Instagram (ник инст.)</span>
+                      </div>
+                      <div class="d-flex justify-content-start align-items-center mb-2">
+                        <img src="assets/images/tele.svg" alt="tele">
+                        <span class="c-darkGrey fs-16 ms-2">Telegram (ник тг.)</span>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
                   </div>
                 </div>
-                <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
+              </div>
+              <div class="row border-bottom-25 ms-0">
+                <div class="col-6 pt-17 pb-17">
+                  <span class="c-grey fs-16">Project name</span>
+                </div>
+                <div class="col-6 pt-17 pb-17">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <div class="d-flex justify-content-start align-items-center mb-2">
+                        <img src="assets/images/insta.svg" alt="insta">
+                        <span class="c-darkGrey fs-16 ms-2">Telegram (ник инст.)</span>
+                      </div>
+                    </div>
+                    <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -542,83 +546,85 @@
         <div class="tab-pane fade" id="neuron-news-tab-pane" role="tabpanel" tabindex="0">
           <p class="fs-18 c-black fw-bold mb-17">Projects</p>
 
-          <table class="w-100">
-            <tbody>
-            <tr class="border-bottom">
-              <th class="pb-10">Name</th>
-              <th class="pb-10">Connections</th>
-              <th class="pb-10">Language</th>
-              <th class="pb-10">Topics</th>
-              <th class="pb-10">News per day</th>
-            </tr>
-            <tr class="border-bottom-25">
-              <td style="max-width: 200px" class="pt-10 pb-10">
+          <div class="overflow-x-auto">
+            <table class="w-100 minw-800">
+              <tbody>
+              <tr class="border-bottom">
+                <th class="pb-10">Name</th>
+                <th class="pb-10">Connections</th>
+                <th class="pb-10">Language</th>
+                <th class="pb-10">Topics</th>
+                <th class="pb-10">News per day</th>
+              </tr>
+              <tr class="border-bottom-25">
+                <td style="max-width: 200px" class="pt-10 pb-10">
                 <span class="c-darkGrey">
                   xdxcvsdvsdvsdvsdvsd sdvsdvsdc
                 </span>
-              </td>
-              <td class="pt-10 pb-10">
-                <div class="d-flex justify-content-start align-items-center mb-2">
-                  <img src="assets/images/insta.svg" alt="insta">
-                  <span class="c-darkGrey fs-16 ms-2">Instagram (ник инст.)</span>
-                </div>
-              </td>
-              <td class="pt-10 pb-10">
+                </td>
+                <td class="pt-10 pb-10">
+                  <div class="d-flex justify-content-start align-items-center mb-2">
+                    <img src="assets/images/insta.svg" alt="insta">
+                    <span class="c-darkGrey fs-16 ms-2">Instagram (ник инст.)</span>
+                  </div>
+                </td>
+                <td class="pt-10 pb-10">
                 <span class="c-darkGrey">
                   English
                 </span>
-              </td>
-              <td class="pt-10 pb-10">
-                <div class="c-darkGrey mb-6">
-                  Technology
-                </div>
-                <div class="c-darkGrey">
-                  Technology
-                </div>
-              </td>
-              <td class="pt-10 pb-10">
-                <div class="d-flex justify-content-between">
+                </td>
+                <td class="pt-10 pb-10">
+                  <div class="c-darkGrey mb-6">
+                    Technology
+                  </div>
+                  <div class="c-darkGrey">
+                    Technology
+                  </div>
+                </td>
+                <td class="pt-10 pb-10">
+                  <div class="d-flex justify-content-between">
                   <span class="c-darkGrey">
                     2
                   </span>
-                  <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
-                </div>
-              </td>
-            </tr>
-            <tr class="border-bottom-25">
-              <td style="max-width: 200px" class="pt-10 pb-10">
+                    <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr class="border-bottom-25">
+                <td style="max-width: 200px" class="pt-10 pb-10">
                 <span class="c-darkGrey">
                   Project name
                 </span>
-              </td>
-              <td class="pt-10 pb-10">
-                <div class="d-flex justify-content-start align-items-center mb-2">
-                  <img src="assets/images/tele.svg" alt="tele">
-                  <span class="c-darkGrey fs-16 ms-2">Telegram (ник тг.)</span>
-                </div>
-              </td>
-              <td class="pt-10 pb-10">
+                </td>
+                <td class="pt-10 pb-10">
+                  <div class="d-flex justify-content-start align-items-center mb-2">
+                    <img src="assets/images/tele.svg" alt="tele">
+                    <span class="c-darkGrey fs-16 ms-2">Telegram (ник тг.)</span>
+                  </div>
+                </td>
+                <td class="pt-10 pb-10">
                 <span class="c-darkGrey">
                   Russian
                 </span>
-              </td>
-              <td class="pt-10 pb-10">
-                <div class="c-darkGrey mb-6">
-                  Technology
-                </div>
-              </td>
-              <td class="pt-10 pb-10">
-                <div class="d-flex justify-content-between">
+                </td>
+                <td class="pt-10 pb-10">
+                  <div class="c-darkGrey mb-6">
+                    Technology
+                  </div>
+                </td>
+                <td class="pt-10 pb-10">
+                  <div class="d-flex justify-content-between">
                   <span class="c-darkGrey">
                     2
                   </span>
-                  <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
-                </div>
-              </td>
-            </tr>
+                    <i class="fa-solid fa-pen me-40 c-darkGrey cursor-pointer hover:[c-black] trans" data-bs-toggle="modal" data-bs-target="#edit-neuron-publisher"></i>
+                  </div>
+                </td>
+              </tr>
 
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
 
           <div class="d-flex justify-content-end mt-10">
             <button class="btn btn-border-black" data-bs-toggle="modal" data-bs-target="#add-neuron-news">

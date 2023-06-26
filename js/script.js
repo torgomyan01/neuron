@@ -11,8 +11,10 @@ $('#menu-icon').on('click', function (){
     if($(this).hasClass(active)){
         $(this).removeClass(active)
         $('.mobile-menu').removeClass(active)
+        $('body').removeClass(hidden)
     } else {
         $(this).addClass(active)
+        $('body').addClass(hidden)
         $('.mobile-menu').addClass(active)
     }
 });
